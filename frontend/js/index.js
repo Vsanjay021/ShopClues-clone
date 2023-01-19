@@ -11,7 +11,7 @@ let cont = document.getElementById("slider")
 
 cont.innerHTML = `<img src=${img[0]} alt="img${i}" class="sliderimg">`
 
-function slider(){
+function timeslider(){
   cont.innerHTML = `<img src=${img[i]} alt="img${i}" class="sliderimg">`
   i++;
   if (i == img.length) {
@@ -19,4 +19,25 @@ function slider(){
   }
 }
 
-let id=setInterval(slider,1500);
+let id=setInterval(timeslider,1500);
+
+let slidermain=document.getElementById("slider-deals");
+let item=slidermain.getElementsByClassName("item");
+
+function next1(){
+    slidermain.append(item[0]);
+}
+
+function prev1(){
+    slidermain.prepend(item[item.length-1])
+}
+let slidermain1=document.getElementById("slider-deals2");
+let item2=slidermain1.getElementsByClassName("item2");
+
+function next11(){
+    slidermain1.append(item2[0]);
+}
+
+function prev11(){
+    slidermain1.prepend(item2[item2.length-1])
+}

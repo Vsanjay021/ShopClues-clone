@@ -171,3 +171,173 @@ a{
     width: 1536px;
     background-color: #eff7fa;
 }
+#dealsoftheday{
+    width: 97%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+#slider-deals{
+    display: flex;
+    overflow: hidden;
+}
+
+#slider-deals>div{
+    margin-right: 20px;
+    margin-left: 25px;
+}
+#bt1{
+position:absolute;
+width: 36px;
+height: 70px;
+border: none;
+background: #24a3b5;
+top: 1;
+bottom: 0;
+margin: auto 0;
+font-size: 25px;
+color: white;
+cursor: pointer;
+}
+#bt2{
+    position:absolute;
+    width: 36px;
+    height: 70px;
+    border: none;
+    background: #24a3b5;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    }
+    .h2dealoftheday{
+        margin-left: 20px;
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    #dailyessentials{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        margin-left: 20px;
+    }
+    .dsimg{
+        max-width: 145px;
+        height: 145px;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .dsimg2{
+        max-width: 145px;
+        height: 145px;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #slider-deals2{
+        display: flex;
+        overflow: hidden;
+    }
+    #slider-deals2>div{
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+    #bt11{
+        position:absolute;
+        width: 36px;
+        height: 70px;
+        border: none;
+        top: 1780px;
+        bottom: 0;
+        background: #24a3b5;
+        margin: auto 0;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #bt22{
+        position:absolute;
+        width: 36px;
+        height: 70px;
+        border: none;
+        right: 0;
+        bottom: 1;
+        top: 1750px;
+        background: #24a3b5;
+        margin: auto 0;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    } 
+    #gridimage{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .footer{
+        display: flex;
+        width: 1536px;
+        justify-content: space-around;
+        border: 1px solid #ddd;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .footerul{
+        list-style: none;
+        margin-top: 10px;
+        color: #757575;
+    }
+    .footerul>li{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .footerul>li:hover{
+        cursor: pointer;
+        color: #24a3b5;
+    }
+    .footerwrapperul{
+        display: flex;
+        width: 1530px;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footerwrapper{
+        border-top: 1px solid #ddd;
+        margin-top: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footerwrapperul>div{
+        width: 30%;
+        border-right: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+    #footermidone{
+        width: 250px;
+        height: 34px;
+        margin-top: 10px;
+    }
+    #footermidtwo{
+        width: 700px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .footermid{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+    }
