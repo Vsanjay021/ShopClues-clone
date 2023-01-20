@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
  <!----------header---------->
  <div class=main_header>
     <div class="logo_div">
-        <img src="./images/imageedit_1_7418394901.png" alt="" id="logoimg">
+        <img src="../images/imageedit_1_7418394901.png" alt="" id="logoimg">
     </div>
     <div class="searchbardiv">
         <div><input type="text" placeholder="           What is on your mind today?" id="inputsearch"></div>
@@ -22,8 +22,8 @@
             <div id="notification" ><img class="headerlastimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkAJ0Sd-3cX_nmWpr2fv4Y6utNEeGZCbS0qbtMpatx1je8DEfmFCqBGTk4p2FUWkq7zA&usqp=CAU" alt=""></div>
             <div id="wishlist"><img class="headerlastimg" src="https://t4.ftcdn.net/jpg/01/67/08/85/360_F_167088585_e1xeqVRqF3dTKGKGVhibUHpvZlTR9fHd.jpg" alt=""></div>
             <div id="cart" ><img class="headerlastimg" src="https://cdn-icons-png.flaticon.com/512/5552/5552326.png" alt=""></div>
-            <div ><a href="./html/signin.html">Sign In</a></div>
-            <div><a href=""></a></div>
+            <div ><a id="usernameuserhtml">WELCOME</a></div>
+            <div><a href="../index.html">SIGN OUT</a></div>
     </div>
     </div>
 
@@ -67,7 +67,7 @@
                             <div>
                                 <h4>Gaming Consoles</h4>
                                 <li><a href="">Gaming Titles</a></li>
-                                <li><a href="">Gaming Accessories</a></li>
+                                <li><a href="./gamingaccesories.html">Gaming Accessories</a></li>
                             </div>
                         </ul>
                     </div>
@@ -457,9 +457,15 @@
     </div>
   <div>
     <div><a href="" id="copyright">Copyright © 2011-2023 Clues Network Pvt. Ltd</a></div>
-    <div><img src="./images/imageedit_1_7418394901.png" alt="" id="lastfooterimg"></div>
+    <div><img src="../images/imageedit_1_7418394901.png" alt="" id="lastfooterimg"></div>
   </div>
 </div>
 </body>
 </html>
-<script src="./js/index.js"></script>
+<script src="../js/index.js"></script>
+<script >
+    let userdetails=JSON.parse(localStorage.getItem("userdetails"))
+    let usernameuserhtml=document.getElementById("usernameuserhtml");
+    usernameuserhtml.innerText=userdetails.name;
+
+</script>

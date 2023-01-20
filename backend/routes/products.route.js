@@ -5,16 +5,22 @@ const productRouter=express.Router();
 
 productRouter.get("/",async (req,res)=>{
     let category=req.query.category;
+    let ID=req.query.Id;
     const page=(req.query.page)-1||0;
     const limit=req.query.limit||3;
     //verify token
     try {
-        if(category){
-            let data=await Productmodel.find({category:category})
-            .skip(page*limit)
-            .limit(limit);
-            res.send(data);
-        }else{
+        if(category || ID){
+            if(category){
+                let data=await Productmodel.find({category:category})
+                res.send(data);
+            }
+            if(ID){
+                let data=await Productmodel.findOne({_id:ID})
+                res.send(data);
+            }  
+        }
+        else{
             let data=await Productmodel.find()
             .skip(page*limit)
             .limit(limit);
