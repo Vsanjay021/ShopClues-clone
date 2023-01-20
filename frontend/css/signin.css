@@ -1,0 +1,75 @@
+.signinwrapper{
+    width: 1536px;
+    display: flex;
+    height: auto;
+    margin-top: 50px;
+}
+
+.signindiv{
+    border-right: 1px solid #24a3b5;
+    width: 50%;
+}
+
+.signindivchild{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.signupdivchild{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.loginhoverpage{
+    color: #24a3b5;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.inputlogin{
+    width: 370px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+
+}
+.inputloginotp{
+    color: red;
+    width: 388px;
+    height: 40px;
+    border:1px solid red;
+    background-color: white;
+    margin-top: 20px;
+    cursor: pointer;
+} 
+#inputloginsend{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+#inputloginsend:hover{
+    color: #24a3b5;
+}
+.inputlogin2{
+    width: 370px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+#signupregister{
+    width: 370px;
+    height: 40px;
+    margin-top: 20px;
+    background-image: -webkit-linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+}
+#inputenterotp{
+    width: 370px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+}

@@ -1,0 +1,68 @@
+body{
+    background-color: #eff7fa;
+}
+
+.gamingwrappermain{
+    width: 1536px;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.gamingwrappermain>div:nth-child(1){
+    width: 20%;
+    height: 1000px;
+    background-color: white;
+}
+#gamingitemswrapper{
+    width: 77%;
+    background-color: white;
+}
+#gamingitemswrapper h1{font-size: 18px;
+    font-weight: 500;
+    color: #212121;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#gamingitemswrappermain{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+}
+#gamingitemswrappermain>div{
+    padding-bottom: 10px;
+}
+#gamingitemimg{
+    width: 210px;
+    height: 160px;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#gamingitemh3{
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+#gamingitempod{
+    display: flex;
+}
+#gamingitempod>div{
+    margin-left: 8px;
+}
+#gamingitemp1{
+    text-decoration: line-through;
+    color: #555;
+}
+#gamingitemp2{
+    color: #24a3b5;
+    font-weight: 700;
+}
