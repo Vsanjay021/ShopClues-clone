@@ -1,0 +1,118 @@
+.cartwrapper{
+    width: 1366px;
+    margin: auto;
+    border: 1px solid red;
+    background-color: white;
+}
+#cartitemwrapper{
+    /* border: 1px solid red; */
+    height: auto;
+}
+
+body{
+    background-color: #eff7fa;
+}
+#maindiv{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+}
+#mycartid{
+    color: #363636;
+    font-size: 24px;
+    font-weight: 1000;
+    margin-left: 75px;
+}
+#cartimgname{
+    display: flex;
+}
+#c12div{
+    color: #777;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+}
+#maindiv>div:nth-child(1){
+    /* border: 1px solid red; */
+    width: 500px;
+}
+/* #maindiv>div:nth-child(2),#maindiv>div:nth-child(3),#maindiv>div:nth-child(4) */
+
+#c11{
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(218, 216, 216);
+    padding: 12px 5px 12px 5px;
+    height: 90px;
+}
+
+#plusminus{
+    /* border: 1px solid red; */
+    padding-top: 10px;
+}
+#plus{
+width: 25px;
+border-radius: 25px;
+border: none;
+background-color: #ded7d7;
+height: 25px;
+cursor: pointer;
+}
+
+#minus{
+    width: 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ded7d7;
+    height: 25px;
+    cursor: pointer;
+}
+
+#spanp{
+    margin: 12px;
+}
+#removeitem{
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: white;
+    margin-top: 5px;
+    color: #24a3b5;
+    cursor: pointer;
+    font: normal 14px/1.42857143 Roboto, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#pricefee{
+    /* display: flex; */
+    text-align: right;
+    padding-top: 10px;
+
+}
+.spanmid1{
+    font: normal 14px/1.42857143 Roboto, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.spanmid{
+    font: normal 14px/1.42857143 Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 6px;
+}
+#inclusivetax{
+    text-align: right;
+}
+#h3ss{
+    font: normal 14px/1.42857143 Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 6px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+#pspan{
+    font: normal 14px/1.42857143 Roboto, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    /* border: 1px solid red; */
+    margin-top: -18px;
+}

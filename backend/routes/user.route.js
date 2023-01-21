@@ -60,7 +60,7 @@ userRouter.post("/verifyotp",async(req,res)=>{
           {to: "+91"+phonenumber, code:code})
         .then(verification_check => {
             if(verification_check.status=="approved"){
-                const token = jwt.sign({ userID:userdata._id }, 'masai');
+                const token = jwt.sign({ "userID":userdata._id }, 'masai');
                 res.send({"msg":"login successful","token":token,"userdetails":userdata});
             }else{
                 res.send("wrong otp");

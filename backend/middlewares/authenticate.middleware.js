@@ -5,14 +5,14 @@ const authenticate=(req,res,next)=>{
     if(token){
         const decoded=jwt.verify(token,"masai",);
         if(decoded){
-            // const userID=decoded.userID;
-            // req.body.userID=userID;
+            const userID=decoded.userID;
+            req.body.userID=userID;
             next();
         }else{
-            res.send("Please login first");
+            res.send("Wrong token");
         }
     }else{
-        res.send("Please login first");
+        res.send("Thers no token");
     }
 }
 

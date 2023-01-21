@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/product_details.css">
 </head>
 <body>
     <h1>Product details page</h1>
+    <main class="divide">
+        <section class="add_cart1">
+          <img
+            src="https://cdn.shopclues.com/images1/thumbnails/40426/320/320/89590771-40426469-1669674087.jpg"
+            alt=""
+            id="slide"
+          />
+          <ul class="navigation">
+            <li>
+              <img
+                src="https://cdn.shopclues.com/images1/thumbnails/40426/320/320/89590771-40426469-1669674087.jpg"
+                alt=""
+                onclick="slideImg('slide',this.src)"
+                id="img1"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn.shopclues.com/images1/thumbnails/112927/320/320/151883336-112927730-1610959737.jpg"
+                alt=""
+                onclick="slideImg('slide',this.src)"
+                id="img2"
+              />
+            </li>
+            <li>
+              <img
+                src="https://cdn.shopclues.com/images/no_image.gif"
+                alt=""
+                onclick="slideImg('slide',this.src)"
+                id="img3"
+              />
+            </li>
+          </ul>
+        </section>
+        <div class="add_cart2">
+          <h2 id="tabname">SONY PS4 CONTROLLER DUALSHOCK 4 MILITARY COLOR NEW</h2>
+          <p id="tabcompany">Product Id : <span>152390887</span></p>
+          <div class="add_insite">
+            <h2 id="actual">₹2199*</h2>
+            <h2  id="mrppd">MRP:</h2>
+            <p class="p2" id="original">₹5999</p>
+          </div>
+          <h5 id="taboff">15% OFF</h5>
+          <h6 id="inclusivetax">Inclusive of all taxes</h6>
+          <button type="button" onclick="cartme()" id="carted">
+            Add To Cart
+          </button>
+        </div>
+      </main>
+      <div id="getsome"></div>
+      <script>
+        function slideImg(id, source) {
+          document.getElementById(id).src = source;
+        }
+      </script>
 </body>
 </html>
+<script src="../js/product_details.js"></script>
