@@ -5,7 +5,7 @@ const {userRouter}=require("./routes/user.route");
 const {adminRouter}=require("./routes/admin.route");
 const {productRouter}=require("./routes/products.route");
 const {authenticate}=require("./middlewares/authenticate.middleware");
-
+const {cartRouter}=require("./routes/cart.route")
 require("dotenv").config();
 const app=express();
 app.use(cors({
@@ -20,6 +20,7 @@ app.use("/admin",adminRouter);
 app.use("/user",userRouter);
 app.use(authenticate);
 app.use("/products",productRouter);
+app.use("/cart",cartRouter)
 
 
 
