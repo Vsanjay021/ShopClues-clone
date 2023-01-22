@@ -195,7 +195,6 @@ async function deleteitem(id){
 if(count.ok){
   countdoc().then((res)=>spancartwrapper.innerText=res);
 }
-    alert("deleted");
     getcartdata();
   } catch (error) {
     console.log(error);

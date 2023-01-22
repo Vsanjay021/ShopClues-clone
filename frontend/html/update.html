@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div id="formtwo">
+        <h1>Update Product</h1>
+        <form action="" id="createform2">
+            <input type="text" placeholder="Enter img link" id="image"><br>
+            <input type="text" placeholder="Enter product name" id="product_name"><br>
+            <input type="text" placeholder="Enter product price" id="product_price"><br>
+            <input type="text" placeholder="Enter product old price" id="oldprice"><br>
+            <input type="text" placeholder="Enter product discount" id="product_discount"><br>
+            <input type="text" placeholder="Enter product Category" id="product_category"><br>
+            <input type="submit" value="Update product" id="submitform2">
+        </form>
+    </div>
+</body>
+</html>
+<!-- <script src="../js/crud.js"></script> -->
+<script>
+let url="http://localhost:3000/products"
+let form2=document.getElementById("createform2");   
+let img=document.getElementById("image");
+let price=document.getElementById("product_price");
+let productname=document.getElementById("product_name");
+let discount=document.getElementById("product_discount");
+let productcategory=document.getElementById("product_category");
+let old_price=document.getElementById("oldprice");
+   form2.addEventListener("submit",(e)=>{
+    e.preventDefault();
+      let obj={
+        img:img.value,
+        productname:productname.value,
+        price:price.value,
+        old_price:old_price.value,
+        discount:discount.value,
+        category:productcategory.value
+    }
+    let id=localStorage.getItem("updateid");
+    console.log(id); 
+    updateproduct(obj,id);
+   })
+   async function updateproduct(data,id){
+    try {
+        let request=await fetch(`${url+"/update/"+id}`,{
+            method:"PATCH",
+            headers:{
+                "Content-Type":"application/json",
+                Authorization:localStorage.getItem("token")
+            },
+            body:JSON.stringify(data)
+        })
+
+        if(request.ok){
+            let msg=await request.json();
+            alert(msg.msg);
+            window.location.href="./productcrud.html";
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+</script>

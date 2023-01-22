@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <h1 style="margin-left: 20px;" >Total Count: <span id="totalcount">0</span></h1>
+<div id="main">
+    <div id="container">
+        <div id="formone">
+            <h1>Add New Product</h1>
+            <form action="" id="createform">
+                <input type="text" placeholder="Enter img link" id="img"><br>
+                <input type="text" placeholder="Enter product name" id="productname"><br>
+                <input type="text" placeholder="Enter product price" id="price"><br>
+                <input type="text" placeholder="Enter product old price" id="old_price"><br>
+                <input type="text" placeholder="Enter product discount" id="discount"><br>
+                <input type="text" placeholder="Enter product Category" id="category"><br>
+                <input type="submit" value="Add product" id="submitform">
+            </form>
+        </div>
+        <hr>
+        <input type="text" placeholder="Enter Category" id="categoryfetch">
+        <button id="fetchproducts">FETCH PRODUCTS</button>
+        <hr>
+    </div>
+    <div id="productswrapper">
+        <table>
+            <thead>
+              <tr>
+                <th>Image link</th>
+                <th>Product name</th>
+                <th>product price</th>
+                <th>Product old price</th>
+                <th>Product discount</th>
+                <th>Product category</th>
+                <th>Delete Product</th>
+                <th>Edit Product</th>
+              </tr>
+            </thead>
+            <tbody >
+              <!-- Append the elements here using JS and DOM  -->
+              
+            </tbody>
+          </table>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="../js/crud.js"></script>
