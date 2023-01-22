@@ -6,12 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
+    <div id="headercart"><img src="https://secure.shopclues.com/atom_view/images/prev.png" onclick="window.location.href='./product_details.html'" alt="">
+        <img src="../images/imageedit_1_7418394901.png" alt="" onclick="window.location.href='./user.html'"></div>
     <div class="cartwrapper">
        <div><h1 id="mycartid">My Cart ( <span id="spancartwrapper">0</span> Item )</h1></div>
        <div id="cartitemwrapper"></div>
+       <div id="lastdivcart">
+        <div>
+            <div id="cartone">
+                <div><h3 id="totalcart">Total</h3></div>
+                <div><p id="totalcartvalue">₹1000</p></div>
+            </div>
+            <div id="carttwo">
+                <div><h2 id="totalcart1">Grand Total</h2></div>
+                <div><p id="totalcartvalue1">₹1000</p></div>
+            </div>
+            <div><p id="cartinclusive">Inclusive of all the applicable taxes</p></div>
+            <div><button onclick="gotonextpage()" id="placeorder">Place Order</button></div>
+        </div>
+
+       </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h4>Shopper Central</h4>
+            <ul class="footerul">
+                <li>Easy Returns & Replacement</li>
+                <li>Sign In/Register</li>
+                <li>Our Policies</li>
+                <li>CluesBucks</li>
+                <li>Payment Options</li>
+                <li>ShopClues Bazaar Surety</li>
+                <li>FAQs (Help)</li>
+                <li>Service Centers</li>
+                <li>User Agreement</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Merchant Central</h4>
+            <ul class="footerul">
+                <li>Merchant Panel</li>
+                <li>How to Sell</li>
+                <li>Comission Structure</li>
+                <li>Fullfillment Policy</li>
+                <li>Policies & Rules</li>
+                <li>User Agreement</li>
+                <li>Testimonials</li>
+                <li>Seller Summit</li>
+                <li>Merchant Blog</li>
+                <li>Developer Resources</li>
+            </ul>
+        </div>
+        <div>
+            <h4>About Us</h4>
+            <ul class="footerul">
+                <li>History</li>
+                <li>Band of Trust</li>
+                <li>In the News</li>
+                <li>Awards</li>
+                <li>Careers</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <ul class="footerul">
+                <li>Merchant Support</li>
+                <li>Bulk Orders</li>
+                <li>Press</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Press</h4>
+            <ul class="footerul">
+                <li>In the News</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footermid">
+        <div><h3>Keep In Touch</h3><img src="https://images.shopclues.com/images/ui/social-ico@2x.png" alt="" id="footermidone"></div>
+        <div><h3>100% Secure and Trusted Payment</h3><img src=" https://images.shopclues.com/images/ui/pgateway_dkt@2x.png" alt="" id="footermidtwo"></div>
+    </div>
+    <div class="main_footer">
+      <div>
+        <div><a href="" class="footerancher">Privacy Policy</a></div>
+        <div><a href="" class="footerancher">User Agreement</a></div>
+        <div><a href="" class="footerancher">Notes to Security Practices</a></div>
+        <div><a href="" class="footerancher">Compliance</a></div>
+        <div><a href="" class="footerancher">Wall of Fame</a></div>
+        </div>
+      <div>
+        <div><a href="" id="copyright">Copyright © 2011-2023 Clues Network Pvt. Ltd</a></div>
+        <div><img src="../images/imageedit_1_7418394901.png" alt="" id="lastfooterimg"></div>
+      </div>
     </div>
 </body>
 </html>
 <script src="../js/cart.js"></script>
+<script>
+    function gotonextpage() {
+        window.location.href="./paynow.html"
+    }
+</script>

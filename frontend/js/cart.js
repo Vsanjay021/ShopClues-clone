@@ -1,4 +1,6 @@
 let cartitemwrapper=document.getElementById("cartitemwrapper");
+let total1=document.getElementById("totalcartvalue");
+let grandtotal=document.getElementById("totalcartvalue1");
 let url="http://localhost:3000/cart";
 
 async function getcartdata(){
@@ -24,7 +26,13 @@ async function getcartdata(){
 
 function rendercartitems(item){
     cartitemwrapper.innerHTML="";
-
+   let  total=item.reduce((accu,item)=>{
+      accu=accu+Number(item.price)*item.quantity;
+      return +accu.toFixed(2);
+  },0)
+      total1.innerText=total;
+      grandtotal.innerText=total;
+      localStorage.setItem("grandtotal",total)
     item.forEach((item,i)=>{
         let maindiv=document.createElement("div");
         maindiv.setAttribute("id","maindiv");
@@ -58,6 +66,7 @@ function rendercartitems(item){
         
         
         plus.addEventListener("click",function(){
+          getcartdata()
           let id=item._id;
           getitemquantity(id).then((q)=>{
             let value=+(q)+1;
@@ -65,10 +74,6 @@ function rendercartitems(item){
             console.log(val);
             increasequantity(id,val);
             pmp.innerText=val;
-
-            let totalvalue=tp*2;
-            let tvalue=totalvalue+"";
-            updateprice(id,tvalue);
           })
         });
 
@@ -77,6 +82,7 @@ function rendercartitems(item){
         minus.innerText="-";
 
         minus.addEventListener("click",function(){
+          getcartdata()
           let idd=item._id;
           getitemquantity(idd).then((q)=>{
             let valuee=+(q)-1;
@@ -142,7 +148,8 @@ function rendercartitems(item){
         let child41div=document.createElement("div");
        let h3=document.createElement("h3");
        h3.setAttribute("id","h3ss")
-       h3.innerText="₹"+item.price;
+       let subtotal=item.price*item.quantity;
+       h3.innerText="₹"+subtotal;
         child41div.append(h3)
         let child42div=document.createElement("div");
        let p3=document.createElement("p");
@@ -206,9 +213,6 @@ async function increasequantity(id,value){
           "Authorization":localStorage.getItem("token")
       }
   });
-  if(count.ok){
-    alert("increased quantity")
-  }
   }
    catch (error) {
     console.log(error);
@@ -225,9 +229,6 @@ async function decreasequantity(id,value){
           "Authorization":localStorage.getItem("token")
       }
   });
-  if(count.ok){
-    alert("decreased quantity")
-  }
   }
    catch (error) {
     console.log(error);

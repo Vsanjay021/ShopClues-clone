@@ -11,7 +11,7 @@ body{
 }
 .gamingwrappermain>div:nth-child(1){
     width: 20%;
-    height: 1000px;
+    height: auto;
     background-color: white;
 }
 #gamingitemswrapper{
@@ -23,6 +23,7 @@ body{
     color: #212121;
     margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 #gamingitemswrappermain{
     display: grid;
