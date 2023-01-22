@@ -31,6 +31,7 @@ let loginotp=async (obj)=>{
             `
             // window.location.href="../html/user.html";
         }else{
+            alert("Some error here")
             inputdiv.innerHTML="";
         }
     } catch (error) {
