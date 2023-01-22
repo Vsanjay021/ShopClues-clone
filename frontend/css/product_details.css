@@ -52,20 +52,22 @@ section ul.navigation li {
   font-size: 18px;
   font-weight: 400;
   color: #353535;
-  margin-bottom: -10px;
+  margin-bottom: 5px;
+
+  /* margin-bottom: -10px; */
 }
 #tabcompany{
   color: #757575;
   font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 15px;
-
+  margin-bottom: 5px;
 }
 .add_insite{
   display: flex;
   align-items: center;
-  margin-bottom: -40px;
+  /* margin-bottom: -40px;
   margin-top: -30px;
-  margin-top: -35px;
+  margin-top: -35px; */
 }
 #actual{
   font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif;
@@ -73,6 +75,7 @@ section ul.navigation li {
   font-size: 28px;
   color: #212121;
   font-weight: 500;
+  margin-bottom: 5px;
 
 }
 #original{
@@ -83,6 +86,7 @@ section ul.navigation li {
   font-weight: 400;
   text-decoration: line-through;
   margin-left: 5px;
+  margin-bottom: 5px;
 
 }
 #mrppd{
@@ -90,20 +94,21 @@ section ul.navigation li {
   font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
+  margin-bottom: 5px;
 
 }
 #taboff{
   font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: #24a3b5;
-
+  margin-bottom: 5px;
 }
 #inclusivetax{
   color: #757575;
   font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 15px;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  /* margin-top: -20px; */
+  margin-bottom: 10px;
 }
 #carted{
   background: #fff;
@@ -115,6 +120,6 @@ section ul.navigation li {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 500;
-  margin-top: -10px;
+  /* margin-top: -10px; */
   border-radius: 3px;
 }

@@ -1,8 +1,9 @@
 .cartwrapper{
     width: 1366px;
     margin: auto;
-    border: 1px solid red;
     background-color: white;
+    padding-top: 10px;
+    margin-top: 20px;
 }
 #cartitemwrapper{
     /* border: 1px solid red; */
@@ -32,6 +33,8 @@ body{
     font-weight: normal;
     font-size: 14px;
     margin-left: 10px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
 }
 #maindiv>div:nth-child(1){
     /* border: 1px solid red; */
@@ -114,5 +117,80 @@ cursor: pointer;
     font: normal 14px/1.42857143 Roboto, Arial, Helvetica, sans-serif;
     font-size: 13px;
     /* border: 1px solid red; */
-    margin-top: -18px;
+    /* margin-top: -18px; */
+}
+#lastdivcart{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    border-top:1px solid rgb(210, 205, 205);
+}
+#lastdivcart>div{
+    width: 20%;
+}
+#cartone{
+    display: flex;
+    justify-content: space-between;
+}
+
+#totalcart{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+#totalcartvalue{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+#carttwo{
+    display: flex;
+    justify-content: space-between;
+}
+#totalcartvalue1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    width: 100%;
+}
+#totalcart1{
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+    width: 100%;
+}
+#cartinclusive{
+    font-size: 12px !important;
+    color: #757575 !important;
+    font-weight: normal !important;
+}
+#placeorder{
+    width: 100%;
+    margin-top: 8px;
+    background-image: -webkit-linear-gradient(0deg,#ff934b 0%,#ff5e62 100%);
+    box-shadow: 0px 2px 8px 0px rgb(255 97 98 / 46%);
+    color: #ffffff !important;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 3px;
+    padding: 12px 10px;
+    cursor: pointer;
+    border: none;
+}
+#headercart{
+    width: 1536px;
+    height: 75px;
+    background-color: white;
+}
+#headercart>img:nth-child(1){
+    height: 100%;
+    margin-left: 70px;
+    cursor: pointer;
+}
+#headercart>img:nth-child(2){
+    height: 100%;
 }
