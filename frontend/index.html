@@ -6,6 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <style>
+             #loginp{
+                cursor: pointer;
+                display: inline;
+            }
+            #ullogin{
+                list-style: none;
+                padding-left: 0px;
+            }
+            #ullogin>li{
+                text-align: left;
+                /* border: 1px solid red; */
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 400;
+                
+                padding: 12px;
+                cursor: pointer;
+            }
+            #ullogin>li>a{
+                text-decoration: none;
+                color: #555;
+            }
+            #ullogin>li>a:hover{
+                color: #24a3b5;
+            }
+            #div2{
+                visibility: hidden;
+                width: 220px;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                position: absolute;
+                left: 100px;
+                top: 45px;
+                /* top:35px */
+            }
+            #div3{
+                background-color: #24a3b5;
+                padding:10px 0px 10px 5px;
+                font: normal 400 14px 'Roboto', Arial, Helvetica, sans-serif
+            }
+
+    </style>
 </head>
 <body>
  <!----------header---------->
@@ -22,7 +64,19 @@
             <div id="notification" ><img class="headerlastimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHkAJ0Sd-3cX_nmWpr2fv4Y6utNEeGZCbS0qbtMpatx1je8DEfmFCqBGTk4p2FUWkq7zA&usqp=CAU" alt=""></div>
             <div id="wishlist"><img class="headerlastimg" src="https://t4.ftcdn.net/jpg/01/67/08/85/360_F_167088585_e1xeqVRqF3dTKGKGVhibUHpvZlTR9fHd.jpg" alt=""></div>
             <div id="cart" ><img class="headerlastimg" src="https://cdn-icons-png.flaticon.com/512/5552/5552326.png" alt=""></div>
-            <div ><a href="./html/signin.html">Sign In</a></div>
+            <div >
+                <p id="loginp"> Login</p>
+        <div id="div2" >
+            <div id="div3"><h2 style="color: white;">Login/Register</h2></div>
+                <ul id="ullogin" style="background-color: white;">
+                <li><a href="./html/signin.html">User Login</a></li>
+                <li><a href="./html/admin.html">Admin Login</a></li>
+                <li><a href="">My Profile</a></li>
+                <li><a href="">My Chat</a></li>
+                <li><a href="">My Orders</a></li>
+            </ul> 
+        </div>
+            </div>
             <div><a href=""></a></div>
     </div>
     </div>
@@ -463,3 +517,19 @@
 </body>
 </html>
 <script src="./js/index.js"></script>
+<script>
+    let va=document.getElementById("div2")
+va.onmouseover=()=>{
+ va.style.visibility='visible'
+}
+va.onmouseout=()=>{
+ va.style.visibility="hidden"
+}
+let a=document.querySelector("#loginp")
+a.onmouseover=()=>{
+ va.style.visibility='visible'
+}
+a.onmouseout=()=>{
+ va.style.visibility="hidden"
+}
+</script>

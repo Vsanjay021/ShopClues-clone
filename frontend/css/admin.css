@@ -1,0 +1,77 @@
+#formone,#formtwo{
+    width: 100%;
+    text-align: center;
+}
+#createform>input{
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+}
+#createform2>input{
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+    width: 300px;
+}
+#categoryfetch{
+    padding: 10px 30px 10px 30px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+#submitform,#submitform2{
+    color:white;
+    background-color: rgb(0, 213, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submitform:hover,#submitform2:hover{
+    background-color: rgb(0, 255, 238);
+}
+#container{
+    border: 1px solid black;
+    width: 300px;
+}
+#fetchproducts{
+    display: block;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+    background-color: rgb(0, 213, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#fetchproducts:hover{
+    background-color: rgb(0, 255, 238);
+}
+#productswrapper{
+    border: 1px solid black;
+    width: 1250px;
+}
+#main{
+    display: flex;
+    justify-content: space-around;
+}
+th{
+    background-color: rgb(0, 213, 255);
+}
+tr{
+    text-align: center;
+}
+td{
+    padding: 8px;
+    background-color: rgb(219, 234, 237);
+    border:1px solid rgb(0, 213, 255)
+}
+#deletebtn{
+    background-color: red;
+    color:  white;
+    cursor: pointer;
+}
+#updatebtn{
+    background-color:green;
+    color:  white;
+    cursor: pointer
+}

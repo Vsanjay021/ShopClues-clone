@@ -6,7 +6,8 @@ body{
   justify-content: space-evenly;
   width: 95%;
   margin: auto;
-  background-color: white
+  background-color: white;
+  margin-top: 20px;
 }
 section {
   position: relative;
