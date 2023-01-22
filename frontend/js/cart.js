@@ -1,5 +1,6 @@
 let cartitemwrapper=document.getElementById("cartitemwrapper");
 let total1=document.getElementById("totalcartvalue");
+let spancartwrapper=document.getElementById('spancartwrapper');
 let grandtotal=document.getElementById("totalcartvalue1");
 let url="http://localhost:3000/cart";
 
@@ -26,6 +27,10 @@ async function getcartdata(){
 
 function rendercartitems(item){
     cartitemwrapper.innerHTML="";
+    // let cartquantity=item.reduce((a,b) => {
+    //   return a+b.quant;
+    // },0);
+    spancartwrapper.innerText=item.length;
    let  total=item.reduce((accu,item)=>{
       accu=accu+Number(item.price)*item.quantity;
       return +accu.toFixed(2);
@@ -163,25 +168,24 @@ function rendercartitems(item){
         cartitemwrapper.append(maindiv);
     })
 }
-countdoc().then((res)=>spancartwrapper.innerText=res);
+// countdoc().then((res)=>spancartwrapper.innerText=res);
 
-let spancartwrapper=document.getElementById('spancartwrapper');
-async function countdoc(){
-  try {
-    let count=await fetch(`${url}/count`,{
-      method:"GET",
-      headers:{
-          "Content-Type":"application/json",
-          "Authorization":localStorage.getItem("token")
-      }
-});
-    let res=await count.json();
-    return res.count;
-  } catch (error) {
-    console.log(error);
-    console.log("some error");
-  }
-}
+// async function countdoc(){
+//   try {
+//     let count=await fetch(`${url}/count`,{
+//       method:"GET",
+//       headers:{
+//           "Content-Type":"application/json",
+//           "Authorization":localStorage.getItem("token")
+//       }
+// });
+//     let res=await count.json();
+//     return res.count;
+//   } catch (error) {
+//     console.log(error);
+//     console.log("some error");
+//   }
+// }
 
 async function deleteitem(id){
   try {

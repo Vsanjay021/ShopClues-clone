@@ -3,7 +3,7 @@ const {Usermodel}=require("../models/user.model")
 const bcrypt=require("bcrypt");
 const jwt=require("jsonwebtoken");
 const accountSid = "AC1e83d074ba09a5d47d76471601848755";
-const authToken = "90e894cd2367acfed7ad43f564a5cc9e";
+const authToken = "4b58b9fb3c812426fc6b53c93296c68e";
 const serviceId='VA39ce9a89ec419166742079926c3a1886';
 const client = require('twilio')(accountSid, authToken);
 
@@ -26,6 +26,7 @@ userRouter.post("/login", async(req,res)=>{
     try {
         let userdata=await Usermodel.find({phonenumber});
         console.log(userdata);
+        // res.send(userdata)
         if(userdata.length>0){
                     client.verify.services(serviceId)
                     .verifications
@@ -37,6 +38,7 @@ userRouter.post("/login", async(req,res)=>{
                         res.send("Something went wrong");
                        }
                     })
+                    // res.send("hello not gone above me")
                  }
                  else{
                      res.send("wrong phone number");
