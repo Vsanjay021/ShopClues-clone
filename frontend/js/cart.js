@@ -196,9 +196,9 @@ async function deleteitem(id){
           "Authorization":localStorage.getItem("token")
       }
 });
-if(count.ok){
-  countdoc().then((res)=>spancartwrapper.innerText=res);
-}
+// if(count.ok){
+//   countdoc().then((res)=>spancartwrapper.innerText=res);
+// }
     getcartdata();
   } catch (error) {
     console.log(error);
