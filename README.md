@@ -52,7 +52,7 @@ Admin Login
 
 ![Screenshot (370).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-01-23/Screenshot%20%28370%29_816444.png)
 
-### 10. So once the user is done with the purchase he can log out by clicking on the log out on the navbar
+### 10. So once the user is done with the purchase he can log out by clicking on the logo out on the navbar
 
 ![Screenshot (376).png](https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2023-01-23/Screenshot%20%28376%29_537387.png)
 
