@@ -3,8 +3,8 @@ const {Usermodel}=require("../models/user.model")
 const bcrypt=require("bcrypt");
 const jwt=require("jsonwebtoken");
 const accountSid = "AC1e83d074ba09a5d47d76471601848755";
-const authToken = "4b58b9fb3c812426fc6b53c93296c68e";
-const serviceId='VA39ce9a89ec419166742079926c3a1886';
+const authToken = "c89e46d4892df4edda639ce538d10e2e";
+const serviceId="VA39ce9a89ec419166742079926c3a1886";
 const client = require('twilio')(accountSid, authToken);
 
 const userRouter=express.Router();
